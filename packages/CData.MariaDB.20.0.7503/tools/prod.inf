@@ -1,0 +1,6 @@
+part=SRRF-A
+version=20.0
+build=7503
+prod=MariaDB Data Provider 2020
+licpath=./
+licname=System.Data.CData.MariaDB
