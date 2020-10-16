@@ -32,7 +32,7 @@
 
     </style>
 
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" runat="server">
+        <form runat="server" >
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="Inicio.aspx">Frank Gael</a>
             <button class="navbar-toggler" type="button">
@@ -93,11 +93,7 @@
             <asp:Label ID="Label1" runat="server" Text="Total:"></asp:Label>
             <asp:Label ID="Label2" runat="server" Text=""></asp:Label> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!"/><div class="container2">
-                <input type="hidden" name="cmd" value="_s-xclick"/>
-                <input type="hidden" name="hosted_button_id" value="EW6MB7MPBM7HJ"/>
-                &nbsp;<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1"/>
-            </div>
+                
 
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:frankgaelConnectionString %>" ProviderName="<%$ ConnectionStrings:frankgaelConnectionString.ProviderName %>" SelectCommand="SELECT c.id, u.Nombre_Usuario, z.Nombre, c.Cantidad, c.precioAcumulado
 FROM carrito c
